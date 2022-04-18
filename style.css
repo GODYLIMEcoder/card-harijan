@@ -1,0 +1,187 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.by {
+  font-size: 10px;
+  padding: 20px;
+  color: #222525;
+  background: #f9f6ee;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 10px 10px 10px #00000014
+}
+
+form {
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+  background: #f5f5f5;
+  margin-top: 100px;
+  box-shadow: 
+   15px 15px 30px #0000002B,
+   -10px -10px 20px white
+}
+
+          /** card profile start **/
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.back_drop {
+  position: absolute;
+  width: 350px;
+  height: 0;
+  border-radius: 50%;
+  background: #353130;
+  transition: 0.3s 0s ease-in-out;
+  transform: translateY(-165px);
+}
+
+form:hover .back_drop {
+  height: 250px;
+}
+
+.profile_out {
+  background: black;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-out;
+  z-index: 10;
+}
+
+.profile_out .profile_in {
+  width: 100%;
+  background: #f9f6ee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  transition: 0.3s 0.2s ease-out
+}
+
+.profile_out .profile_in img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+form:hover .profile_out{
+  padding: 10px
+}
+
+form:hover .profile_in {
+  padding: 10px
+}
+
+            /** card profile end **/
+            /** card header start **/
+            
+.header {
+  margin-top: 15px;
+}
+
+.header h3 {
+  text-align: center;
+}
+
+.header .sec1 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center
+}
+
+.header .sec1 img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.header .sec2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+            
+            /** card header end **/
+            
+            /** card skills start **/
+            
+.skills {
+  margin-top: 25px;
+  padding: 0 10px;
+}
+
+.skills h6 {
+  margin-left: 10px;
+}
+
+.skills section {
+  display:  flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.skills section div {
+  margin: 0 0 10px 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 14px;
+  transition: 0.3s ease-in;
+}
+
+.skills section div:hover {
+  background: black;
+  color: white;
+}
+            
+            /** card skills end **/
+            
+            /**card footer start**/
+            
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background: #1f201c;
+  transform: translateY(50px);
+  transition: 0.3s ease-in;
+}
+            
+.footer img {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%);
+  margin: 0 5px;
+  padding: 0 10px;
+  transition: 0.3s ease-in;
+}
+
+.footer img:hover{
+  background: #f9f6ee;
+  position: relative;
+  filter: invert(0%);
+}
+
+form:hover .footer {
+  transform: translateY(0)
+}
+            
+            /**card footer end**/
